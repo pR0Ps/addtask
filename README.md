@@ -33,7 +33,7 @@ The needed packages are installable from PyPi and are in the `requirements.txt` 
 
 ### Local
 
-Symlink or move the script into a folder in your $PATH. Feel free to take off the '.py' extension as well
+Symlink or move the script into a folder in your $PATH. Feel free to take off the '.py' extension as well.
       
 ## Usage Examples
 
