@@ -1,1 +1,4 @@
 *.py[cod]
+addtask.egg-info/*
+build/*
+dist/*
