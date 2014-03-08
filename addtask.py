@@ -12,9 +12,10 @@ from datetime import date
 import calendar
 import os
 
-tasky_dir = os.path.join(os.environ['HOME'], '.config', 'tasky')
-KEYS_FILE = os.path.join(tasky_dir, 'keys.txt')
-OAUTH_FILE = os.path.join(tasky_dir, 'oauth.dat')
+
+CONFIG_DIR = os.path.join(os.environ['HOME'], '.config', 'addtask')
+KEYS_FILE = os.path.join(CONFIG_DIR, 'keys.txt')
+OAUTH_FILE = os.path.join(CONFIG_DIR, 'oauth.dat')
 
 
 class Auth():
@@ -31,8 +32,8 @@ class Auth():
             self.write_auth()
 
     def write_auth(self):
-        if not os.path.exists(tasky_dir):
-            os.makedirs(tasky_dir)
+        if not os.path.exists(CONFIG_DIR):
+            os.makedirs(CONFIG_DIR)
         with open(KEYS_FILE, 'w') as auth:
             auth.write(str(self.clientid) + '\n')
             auth.write(str(self.clientsecret) + '\n')

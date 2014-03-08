@@ -17,7 +17,7 @@ For example, the command above will create an event called "1 month, 2 weeks, an
 Requires Python 2.7 and the [Google API client for Python](http://code.google.com/p/google-api-python-client/).
 The needed packages are installable from PyPi and are in the `requirements.txt` file. Use `pip install -r requirements.txt` to install them.
 
-**NOTE**: This script will create an unencypted `~/.addtask/keys.txt` to hold API credentials on disk.
+**NOTE**: This script will create an unencypted `~/.config/addtask/keys.txt` to hold API credentials on disk.
 
 ## Installation
 
